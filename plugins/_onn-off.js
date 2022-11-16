@@ -39,11 +39,11 @@ await conn.reply(m.chat, '*Silahkan pilih opsi on / off*\nOpsi ini untuk mengakt
 })
  
 }
-} else conn.sendButton(m.chat, `Silahkan ketik ${usedPrefix}menu`, set.wm, 'Menu', `${usedPrefix}menu`, m)
+} else conn.sendButton(m.chat, `Silahkan ketik ${usedPrefix}menu`, wm, 'Menu', `${usedPrefix}menu`, m)
 }
-handler.help = ['ndaa *on / off*']
+handler.help = ['ndaabotz *on / off*']
 handler.tags = ['admin']
-handler.command = /^(ndaa)$/i
+handler.command = /^(ndaa|ndaabotz)$/i
 
 handler.admin = true
 handler.owner = false
